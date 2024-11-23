@@ -3,11 +3,6 @@
     "api/*.py": {
       "runtime": "vercel-python@latest"
     }
-  },
-  "builds": [
-    {
-      "src": "requirements.txt",
-      "use": "@vercel/python"
-    }
-  ]
+  }
 }
+
