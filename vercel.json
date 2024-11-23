@@ -1,7 +1,10 @@
+# vercel.json
 {
-  "functions": {
-    "api/*.py":{
-      "runtime":"python@3.9"
-    }
-  }
+"builds": [
+    { "src": "api/*.py", "use": "@vercel/python" }
+  ],
+  "redirects": [
+    { "source": "/", "destination": "api/webhook.py" }
+  ]  
+
 }
